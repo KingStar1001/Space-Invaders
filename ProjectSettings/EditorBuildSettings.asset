@@ -4,7 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects:
-    com.unity.addressableassets: {fileID: 11400000, guid: 37f9e3de1ad7ab84f98871a07edc8e59, type: 2}
-    com.unity.localization.settings: {fileID: 11400000, guid: 306600730e71ef94dbf38b79fb91c54c, type: 2}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/SpaceRTS/SpaceRTS.unity
+    guid: c33320be10e23c643af2538fea48db5b

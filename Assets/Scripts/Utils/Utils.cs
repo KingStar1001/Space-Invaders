@@ -14,6 +14,11 @@ namespace SpaceInvaders
                 obj.SendMessage(method, param);
             }
         }
+
+        public static string FormatNumber(long number)
+        {
+            return number.ToString("N0");
+        }
     }
 
 }
