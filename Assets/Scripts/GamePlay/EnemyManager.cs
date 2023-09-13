@@ -34,6 +34,7 @@ public class EnemyManager : MonoBehaviour
                 if (enemies.Count > 0)
                 {
                     nextFireDuration = Random.Range(6f / (float)enemies.Count, 12f / (float)enemies.Count);
+                    if (nextFireDuration < 0.3f) nextFireDuration = 0.3f;
                     delta = 0f;
                     Fire();
                 }
