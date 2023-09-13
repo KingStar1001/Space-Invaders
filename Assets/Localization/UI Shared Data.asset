@@ -43,6 +43,18 @@ MonoBehaviour:
     m_Key: Resume
     m_Metadata:
       m_Items: []
+  - m_Id: 338288282951680
+    m_Key: Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365118410973184
+    m_Key: GameOver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366065753251840
+    m_Key: Restart
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -51,6 +63,7 @@ MonoBehaviour:
     version: 2
     RefIds:
     - rid: 336776281089638424
-      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
       data:
         m_CustomEpoch: 1694460680019

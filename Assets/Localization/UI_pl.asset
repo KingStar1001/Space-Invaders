@@ -46,6 +46,18 @@ MonoBehaviour:
     m_Localized: "Wznawia\u0107"
     m_Metadata:
       m_Items: []
+  - m_Id: 338288282951680
+    m_Localized: Poziom {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365118410973184
+    m_Localized: Koniec gry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366065753251840
+    m_Localized: Uruchom ponownie
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

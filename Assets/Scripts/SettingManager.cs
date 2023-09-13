@@ -12,6 +12,7 @@ public class SettingManager : MonoBehaviour
     void Awake()
     {
         instance = this;
+        StopCoroutine("LoadSavedLocale");
         StartCoroutine("LoadSavedLocale");
     }
 
