@@ -11,11 +11,8 @@ public class CameraMovement : MonoBehaviour
     {
         Quaternion targetRotation = Quaternion.identity;
 
-#if UNITY_WEBGL
-        targetRotation = Quaternion.AngleAxis(rotationSpeed / 10f * Time.deltaTime, rotationAxis) * transform.rotation;
-#else
-        targetRotation =  Quaternion.AngleAxis(rotationSpeed * Time.deltaTime, rotationAxis) * transform.rotation;
-#endif
+        targetRotation = Quaternion.AngleAxis(rotationSpeed * Time.deltaTime, rotationAxis) * transform.rotation;
+
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime);
     }
 }
