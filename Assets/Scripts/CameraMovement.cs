@@ -9,10 +9,13 @@ public class CameraMovement : MonoBehaviour
 
     private void Update()
     {
-        // Calculate the desired rotation
-        Quaternion targetRotation = Quaternion.AngleAxis(rotationSpeed * Time.deltaTime, rotationAxis) * transform.rotation;
+        Quaternion targetRotation = Quaternion.identity;
 
-        // Smoothly interpolate between the current rotation and the desired rotation
+#if UNITY_WEBGL
+        targetRotation = Quaternion.AngleAxis(rotationSpeed / 10f * Time.deltaTime, rotationAxis) * transform.rotation;
+#else
+        targetRotation =  Quaternion.AngleAxis(rotationSpeed * Time.deltaTime, rotationAxis) * transform.rotation;
+#endif
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime);
     }
 }
